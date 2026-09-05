@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Santhosh's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="desktop">
+
+    <!-- Menu Bar -->
+    <div class="menu-bar">
+      <div class="menu-left">
+        <img src="assets/apple.png" class="apple-logo" alt="logo">
+        <span class="menu-item">File</span>
+        <span class="menu-item">Edit</span>
+        <span class="menu-item">View</span>
+      </div>
+      <div class="menu-right">
+        <span id="clock"></span>
+      </div>
+    </div>
+
+    <!-- Desktop Icons -->
+    <div class="desktop-icons">
+      <a href="files/resume.pdf" class="desktop-icon">
+        <div class="icon-box">📄</div>
+        <span>Resume.pdf</span>
+      </a>
+    </div>
+
+    <!-- Dock -->
+    <div class="dock">
+      <div class="dock-icon" data-app="about">👤</div>
+      <div class="dock-icon" data-app="projects">📁</div>
+      <div class="dock-icon" data-app="skills">🛠️</div>
+      <div class="dock-icon" data-app="contact">✉️</div>
+      <div class="dock-icon" data-app="certificates">🎓</div>
+    </div>
+
+    <!-- Windows -->
+    <div class="window" id="window-about" style="top: 80px; left: 30%;">
+      <div class="window-header">
+        <div class="window-buttons">
+          <span class="btn close"></span>
+          <span class="btn minimize"></span>
+          <span class="btn maximize"></span>
+        </div>
+        <span class="window-title">About Me</span>
+      </div>
+      <div class="window-content">
+        <p>Hi, I'm Santhosh — a B.Tech IT student passionate about web development and building things that work.</p>
+      </div>
+    </div>
+
+    <div class="window" id="window-projects" style="top: 120px; left: 40%;">
+      <div class="window-header">
+        <div class="window-buttons">
+          <span class="btn close"></span>
+          <span class="btn minimize"></span>
+          <span class="btn maximize"></span>
+        </div>
+        <span class="window-title">Projects</span>
+      </div>
+        <div class="window-content" id="projects-content">
+    <p>Loading projects...</p>
+  </div>  
+    </div>
+
+        <div class="window" id="window-skills" style="top: 160px; left: 50%;">
+      <div class="window-header">
+        <div class="window-buttons">
+          <span class="btn close"></span>
+          <span class="btn minimize"></span>
+          <span class="btn maximize"></span>
+        </div>
+        <span class="window-title">Skills</span>
+      </div>
+      <div class="window-content">
+        <p>Python, Java, HTML, CSS, JavaScript</p>
+        <p>Libraries: numpy, pandas, matplotlib, seaborn</p>
+      </div>
+    </div>
+
+    <div class="window" id="window-contact" style="top: 200px; left: 35%;">
+      <div class="window-header">
+        <div class="window-buttons">
+          <span class="btn close"></span>
+          <span class="btn minimize"></span>
+          <span class="btn maximize"></span>
+        </div>
+        <span class="window-title">Contact</span>
+      </div>
+      <div class="window-content">
+        <p>Email: youremail@example.com</p>
+        <p>GitHub: github.com/yourusername</p>
+        <p>LinkedIn: linkedin.com/in/yourusername</p>
+      </div>
+    </div>
+
+    <div class="window" id="window-certificates" style="top: 240px; left: 45%;">
+      <div class="window-header">
+        <div class="window-buttons">
+          <span class="btn close"></span>
+          <span class="btn minimize"></span>
+          <span class="btn maximize"></span>
+        </div>
+        <span class="window-title">Certificates</span>
+      </div>
+      <div class="window-content">
+        <p>Certificates will be listed here soon.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

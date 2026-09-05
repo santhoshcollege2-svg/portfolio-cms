@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+
+  <!-- Login Section -->
+  <div id="login-section" class="container">
+    <h2>Admin Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="login-error" class="error"></p>
+  </div>
+
+  <!-- Dashboard Section (hidden until logged in) -->
+  <div id="dashboard-section" class="container hidden">
+    <h2>Manage Projects</h2>
+    <button onclick="logout()" class="logout-btn">Logout</button>
+
+      <h3 id="form-heading">Add New Project</h3>
+    <input type="hidden" id="edit-id">
+    <input type="text" id="new-title" placeholder="Title">
+    <textarea id="new-description" placeholder="Description"></textarea>
+    <input type="text" id="new-tech" placeholder="Tech Stack (comma separated)">
+    <input type="text" id="new-github" placeholder="GitHub Link">
+    <input type="file" id="new-image">
+    <button onclick="saveProject()" id="save-btn">Add Project</button>
+    <button onclick="cancelEdit()" id="cancel-btn" class="hidden">Cancel</button>
+    <p id="add-error" class="error"></p>
+
+    <h3>Existing Projects</h3>
+    <div id="project-list"></div>
+  </div>
+
+  <script src="admin-script.js"></script>
+</body>
+</html>
