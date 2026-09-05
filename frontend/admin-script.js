@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://santhosh-portfolio-backend-p6gw.onrender.com/api';
 let token = localStorage.getItem('adminToken');
 let editingId = null;
 

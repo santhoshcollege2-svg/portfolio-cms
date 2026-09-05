@@ -94,7 +94,7 @@ document.querySelectorAll('.window .btn.maximize').forEach(btn => {
 async function loadProjects() {
   const container = document.getElementById('projects-content');
   try {
-    const response = await fetch('http://localhost:3000/api/projects');
+    const response = await fetch('https://santhosh-portfolio-backend-p6gw.onrender.com/api/projects');
     const projects = await response.json();
 
     if (projects.length === 0) {

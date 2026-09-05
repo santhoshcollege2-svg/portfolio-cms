@@ -8,7 +8,7 @@ router.post('/', verifyToken, upload.single('image'), (req, res) => {
   if (!req.file) {
     return res.status(400).json({ error: 'No file uploaded' });
   }
-  const fileUrl = `http://localhost:3000/uploads/${req.file.filename}`;
+  const fileUrl = `https://santhosh-portfolio-backend-p6gw.onrender.com/uploads/${req.file.filename}`;
   res.json({ url: fileUrl });
 });
 
